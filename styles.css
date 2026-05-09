@@ -39,6 +39,9 @@ body {
     color: var(--text);
     line-height: 1.6;
     transition: background-color 0.2s ease, color 0.2s ease;
+    border-right: 50px solid;
+    border-left: 50px solid;
+    border-image:linear-gradient(to bottom, black, grey) 2;
 }
 
 /* ---- Typography ---- */
@@ -86,6 +89,10 @@ a:focus-visible {
     flex-wrap: wrap;
     gap: 1rem;
 }
+.nav-wrapper {
+    width: 100%;
+    border-bottom: 10px double black;
+}
 
 .nav__logo {
     font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -129,7 +136,9 @@ a:focus-visible {
 /* ---- Hero ---- */
 
 .hero {
-    border-bottom: 1px solid var(--border);
+    border-bottom: 10px solid var(--border);
+    border-radius: 25px;
+    border-color: black;
 }
 
 .hero__content {
